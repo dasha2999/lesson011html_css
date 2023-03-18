@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изучаем формы</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="wrapper">
+        <a href="#down"> Down / Вниз </a>
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <img src="https://api.lorem.space/image/house?w=800&h=480&hash=ba125iyb" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt labore obcaecati aliquam minus animi culpa mollitia aspernatur pariatur sit tenetur at nostrum quaerat autem laudantium, cum et, sunt aperiam magnam.</p>
+        <p>Obcaecati nemo et totam voluptas odio asperiores officiis labore officia? Voluptas, possimus soluta natus impedit illo beatae, tempora neque nam quia, commodi aliquid corporis fugiat consequuntur aliquam ullam deserunt excepturi?</p>
+        <p>Id accusantium nulla nisi expedita libero veniam doloremque nostrum! Cumque recusandae dolorum, laborum, facilis minus quidem nulla tempora officia voluptatum unde dolores excepturi delectus quaerat quos consequatur praesentium amet quae!</p>
+        <p>Minus hic alias natus recusandae iste voluptatum obcaecati, placeat aliquam veritatis, excepturi cupiditate? Harum repellat culpa autem, praesentium animi libero aliquam ab excepturi, doloribus dolor vel. Quidem earum architecto consequatur!</p>
+        <p>Vero, totam. Autem cupiditate saepe ad nostrum laborum velit, laudantium ullam iste hic facere. Odio corrupti, commodi voluptate id autem dignissimos veniam harum dolorem odit facere explicabo repellat culpa minima.</p>
+        <hr>
+        <form action="send.html" method="GET" name="form1" novalidate>
+            <label>
+                <p class="fName">Укажите ваше имя</p>
+                <input type="text"
+                name="form1_name" placeholder="Например: Дарья" maxlength="10"
+                required>
+            </label>
+            <label for="form1_phone">
+                <p class="fPhone">Укажите ваш телефон</p>
+            </label>
+            <input id="form1_phone" type="text" name="form1_phone" placeholder="Например: +375..." required>
+            <input type="submit" value="Оставьте свои контакты">
+            <input type="reset" value="Очистить форму">
+            <input type="image" src="img/blueButton.jpg">
+            <input type="button" value="Кнопка для JS">
+            <hr>
+            <input type="color">
+            <input type="date">
+            <input type="range">
+            <hr>
+            <p>
+                Курите ли вы?
+            </p>
+            <label>Да<input type="radio" name="smoke" value="Yes"></label>
+            <label>Нет<input type="radio" name="smoke" value="No" checked></label>
+            <label>Нет<input type="radio" name="smoke" value="No"></label>
+            <label>Нет<input type="radio" name="smoke" value="No"></label>
+            <hr>
+            <p>Какие газеты вы читаете?</p>
+            <label >Аргументы и факты<input type="checkbox" name="aif"></label>
+            <label>Гомельская правда<input type="checkbox" name="gp"></label>
+            <label>Комсомольская правда<input type="checkbox" name="kp"></label>
+            <label>Не читаю газеты<input type="checkbox" name="no" checked></label>
+            <hr>
+            <p>Сколько часов в сутках вы спите?</p>
+            <select name="dream" size="8" multiple>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option selected>7</option>
+                <option>8</option>
+                <option>Более 8</option>
+            </select>
+            <hr>
+        <p>Выбери меню</p>
+            <input list="menu">
+            <datalist id="menu">
+                <option>Булочки</option>
+                <option>Печенье</option>
+                <option>Мороженое</option>
+                <option>Мармелад</option>
+                <option>Шоколад</option>
+                <option>Конфеты</option>
+            </datalist>
+            <hr>
+            <!-- <ul>
+                <li>Один
+                    <li>Два
+                    <li>Три
+                    <li>Четыре
+                    <li>Пять
+                </li>
+            </ul> -->
+            <p>
+                Оставьте ваше сообщение ниже:
+            </p>
+            <textarea name="form1_text" cols="80" rows="20" placeholder="Введите ваше сообщение"></textarea>
+        </form>
+        <hr id="down">
+    </div>
+</body>
+</html>
